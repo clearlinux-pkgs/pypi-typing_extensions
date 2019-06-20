@@ -1,5 +1,5 @@
 PKG_NAME := typing_extensions
-URL = https://files.pythonhosted.org/packages/fa/aa/229f5c82d17d10d4ef318b5c22a8626a1c78fc97f80d3307035cf696681b/typing_extensions-3.7.2.tar.gz
+URL = https://files.pythonhosted.org/packages/59/b6/21774b993eec6e797fbc49e53830df823b69a3cb62f94d36dfb497a0b65a/typing_extensions-3.7.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
