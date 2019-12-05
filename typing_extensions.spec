@@ -4,7 +4,7 @@
 #
 Name     : typing_extensions
 Version  : 3.7.4.1
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/e7/dd/f1713bc6638cc3a6a23735eff6ee09393b44b96176d3296693ada272a80b/typing_extensions-3.7.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e7/dd/f1713bc6638cc3a6a23735eff6ee09393b44b96176d3296693ada272a80b/typing_extensions-3.7.4.1.tar.gz
 Summary  : Backported and Experimental Type Hints for Python 3.5+
