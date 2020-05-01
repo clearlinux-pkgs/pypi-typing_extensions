@@ -2,3 +2,4 @@
 aiohttp
 mypy
 onnx
+typing_inspect
