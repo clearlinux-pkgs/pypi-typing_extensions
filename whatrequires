@@ -3,3 +3,4 @@ aiohttp
 mypy
 onnx
 typing_inspect
+yarl
