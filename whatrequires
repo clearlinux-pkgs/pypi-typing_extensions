@@ -1,6 +1,7 @@
 # This file contains recursive sources that require this package
 aiohttp
+black
 mypy
 onnx
-typing_inspect
+pytorch
 yarl
