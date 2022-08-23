@@ -4,7 +4,7 @@
 #
 Name     : pypi-typing_extensions
 Version  : 4.3.0
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/9e/1d/d128169ff58c501059330f1ad96ed62b79114a2eb30b8238af63a2e27f70/typing_extensions-4.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/1d/d128169ff58c501059330f1ad96ed62b79114a2eb30b8238af63a2e27f70/typing_extensions-4.3.0.tar.gz
 Summary  : Backported and Experimental Type Hints for Python 3.7+
