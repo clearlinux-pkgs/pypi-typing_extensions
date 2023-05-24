@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-typing_extensions
-Version  : 4.6.0
-Release  : 52
-URL      : https://files.pythonhosted.org/packages/e4/03/4670b4c206e1dc869f2f0120c3d0a2b17d42526ab2b5a8f66d4cd8642ef3/typing_extensions-4.6.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e4/03/4670b4c206e1dc869f2f0120c3d0a2b17d42526ab2b5a8f66d4cd8642ef3/typing_extensions-4.6.0.tar.gz
+Version  : 4.6.1
+Release  : 53
+URL      : https://files.pythonhosted.org/packages/aa/67/f4e6ae6998b0c86ab10f8e96339f00afaf30bef11f63a81c63977c2b89d7/typing_extensions-4.6.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/aa/67/f4e6ae6998b0c86ab10f8e96339f00afaf30bef11f63a81c63977c2b89d7/typing_extensions-4.6.1.tar.gz
 Summary  : Backported and Experimental Type Hints for Python 3.7+
 Group    : Development/Tools
 License  : Python-2.0
@@ -57,10 +57,10 @@ python3 components for the pypi-typing_extensions package.
 
 
 %prep
-%setup -q -n typing_extensions-4.6.0
-cd %{_builddir}/typing_extensions-4.6.0
+%setup -q -n typing_extensions-4.6.1
+cd %{_builddir}/typing_extensions-4.6.1
 pushd ..
-cp -a typing_extensions-4.6.0 buildavx2
+cp -a typing_extensions-4.6.1 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684870248
+export SOURCE_DATE_EPOCH=1684942150
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
