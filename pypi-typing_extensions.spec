@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-typing_extensions
-Version  : 4.6.2
-Release  : 54
-URL      : https://files.pythonhosted.org/packages/be/fc/3d12393d634fcb31d5f4231c28feaf4ead225124ba08021046317d5f450d/typing_extensions-4.6.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/be/fc/3d12393d634fcb31d5f4231c28feaf4ead225124ba08021046317d5f450d/typing_extensions-4.6.2.tar.gz
+Version  : 4.7.1
+Release  : 55
+URL      : https://files.pythonhosted.org/packages/3c/8b/0111dd7d6c1478bf83baa1cab85c686426c7a6274119aceb2bd9d35395ad/typing_extensions-4.7.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/3c/8b/0111dd7d6c1478bf83baa1cab85c686426c7a6274119aceb2bd9d35395ad/typing_extensions-4.7.1.tar.gz
 Summary  : Backported and Experimental Type Hints for Python 3.7+
 Group    : Development/Tools
 License  : Python-2.0
@@ -57,10 +57,10 @@ python3 components for the pypi-typing_extensions package.
 
 
 %prep
-%setup -q -n typing_extensions-4.6.2
-cd %{_builddir}/typing_extensions-4.6.2
+%setup -q -n typing_extensions-4.7.1
+cd %{_builddir}/typing_extensions-4.7.1
 pushd ..
-cp -a typing_extensions-4.6.2 buildavx2
+cp -a typing_extensions-4.7.1 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685027775
+export SOURCE_DATE_EPOCH=1690487777
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -93,7 +93,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-typing_extensions
-cp %{_builddir}/typing_extensions-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-typing_extensions/f456f46e1dcbc636c8451a46426568705fe98a98 || :
+cp %{_builddir}/typing_extensions-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-typing_extensions/c6e195f9aa30cc9b675d1612ca4fb7f74111bd35 || :
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -113,7 +113,7 @@ popd
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/pypi-typing_extensions/f456f46e1dcbc636c8451a46426568705fe98a98
+/usr/share/package-licenses/pypi-typing_extensions/c6e195f9aa30cc9b675d1612ca4fb7f74111bd35
 
 %files python
 %defattr(-,root,root,-)
