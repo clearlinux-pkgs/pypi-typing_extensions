@@ -4,11 +4,11 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-typing_extensions
-Version  : 4.7.1
-Release  : 55
-URL      : https://files.pythonhosted.org/packages/3c/8b/0111dd7d6c1478bf83baa1cab85c686426c7a6274119aceb2bd9d35395ad/typing_extensions-4.7.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3c/8b/0111dd7d6c1478bf83baa1cab85c686426c7a6274119aceb2bd9d35395ad/typing_extensions-4.7.1.tar.gz
-Summary  : Backported and Experimental Type Hints for Python 3.7+
+Version  : 4.8.0
+Release  : 56
+URL      : https://files.pythonhosted.org/packages/1f/7a/8b94bb016069caa12fc9f587b28080ac33b4fbb8ca369b98bc0a4828543e/typing_extensions-4.8.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/1f/7a/8b94bb016069caa12fc9f587b28080ac33b4fbb8ca369b98bc0a4828543e/typing_extensions-4.8.0.tar.gz
+Summary  : Backported and Experimental Type Hints for Python 3.8+
 Group    : Development/Tools
 License  : Python-2.0
 Requires: pypi-typing_extensions-license = %{version}-%{release}
@@ -57,10 +57,10 @@ python3 components for the pypi-typing_extensions package.
 
 
 %prep
-%setup -q -n typing_extensions-4.7.1
-cd %{_builddir}/typing_extensions-4.7.1
+%setup -q -n typing_extensions-4.8.0
+cd %{_builddir}/typing_extensions-4.8.0
 pushd ..
-cp -a typing_extensions-4.7.1 buildavx2
+cp -a typing_extensions-4.8.0 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1690487777
+export SOURCE_DATE_EPOCH=1695065720
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
