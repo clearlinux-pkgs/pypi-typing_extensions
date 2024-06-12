@@ -6,10 +6,10 @@
 # autospec commit: fbcebd0
 #
 Name     : pypi-typing_extensions
-Version  : 4.12.1
-Release  : 63
-URL      : https://files.pythonhosted.org/packages/e8/fb/4217a963512b9646274fe4ce0aebc8ebff09bbb86c458c6163846bb65d9d/typing_extensions-4.12.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e8/fb/4217a963512b9646274fe4ce0aebc8ebff09bbb86c458c6163846bb65d9d/typing_extensions-4.12.1.tar.gz
+Version  : 4.12.2
+Release  : 64
+URL      : https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz
 Summary  : Backported and Experimental Type Hints for Python 3.8+
 Group    : Development/Tools
 License  : Python-2.0
@@ -59,10 +59,10 @@ python3 components for the pypi-typing_extensions package.
 
 
 %prep
-%setup -q -n typing_extensions-4.12.1
-cd %{_builddir}/typing_extensions-4.12.1
+%setup -q -n typing_extensions-4.12.2
+cd %{_builddir}/typing_extensions-4.12.2
 pushd ..
-cp -a typing_extensions-4.12.1 buildavx2
+cp -a typing_extensions-4.12.2 buildavx2
 popd
 
 %build
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1717433722
+export SOURCE_DATE_EPOCH=1718230357
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
