@@ -1,5 +1,5 @@
 PKG_NAME := pypi-typing_extensions
-URL = https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz
+URL = https://files.pythonhosted.org/packages/0e/3e/b00a62db91a83fff600de219b6ea9908e6918664899a2d85db222f4fbf19/typing_extensions-4.13.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
